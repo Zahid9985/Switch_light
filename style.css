@@ -1,0 +1,261 @@
+body{
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+     width: 100%;
+  height: 100%;
+  --s: 100px; /* control the size */
+  --c1: #f8b195;
+  --c2: #355c7d;
+
+  --_g: var(--c2) 4% 14%, var(--c1) 14% 24%, var(--c2) 22% 34%,
+    var(--c1) 34% 44%, var(--c2) 44% 56%, var(--c1) 56% 66%, var(--c2) 66% 76%,
+    var(--c1) 76% 86%, var(--c2) 86% 96%;
+  background: radial-gradient(
+      100% 100% at 100% 0,
+      var(--c1) 4%,
+      var(--_g),
+      #0008 96%,
+      #0000
+    ),
+    radial-gradient(
+        100% 100% at 0 100%,
+        #0000,
+        #0008 4%,
+        var(--_g),
+        var(--c1) 96%
+      )
+      var(--c1);
+  background-size: var(--s) var(--s);
+}
+/* From Uiverse.io by marcelodolza */ 
+
+
+.main{
+    position: relative;
+    margin-top:70px;
+    border: 2px solid black;
+    height: 500px;
+    width: 65%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(7px);
+
+}
+#on{
+    left:0;
+    position: absolute;
+    margin-top:100px;
+    margin-left:150px;
+    height: 140px;
+    width: 80px;
+    /* background-color: rgb(22, 152, 46); */
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+    /* 2222222222222222222222 */
+     --bg: #22df11bb;
+  --text-color: #fff;
+  
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  /* padding: 1em; */
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  /* border-radius: 5px; */
+  opacity: 1;
+  letter-spacing: 1px;
+  box-shadow: #15ff00bb, #000 5px 8px 0px;
+}
+#on:hover {
+  opacity: 1;
+}
+
+#on:active {
+  top: 10px;
+  box-shadow:rgb(1, 252, 47),#000 5px 3px 0px;
+}
+
+.line_one{
+    position: absolute;
+    height:50px;
+    width: 0;
+    border: 2px solid blue;
+    margin:51px 0 0 187px;
+}
+.line_two{
+    position: absolute;
+    border: 2px solid blue;
+    height: 0;
+    width: 141px;
+    margin:49px 0 0 187px;
+}
+.line_three{
+    position: absolute;
+    height:302px;
+    width: 0;
+    border: 2px solid blue;
+    margin:51px 0 0 328px;
+}
+.line_four{
+    position: absolute;
+    border: 2px solid blue;
+    height: 0;
+    width: 128px;
+    margin:355px 0 0 328px;
+}
+.line_five{
+    position: absolute;
+    bottom: 0;
+    height:38px;
+    width: 0;
+    border: 2px solid blue;
+    margin:0 0 142px 458px;
+}
+.on_font{
+    padding-top:12px;
+    font-size: small;
+}
+#off{
+    left:0;
+    position: absolute;
+    margin-top:239px;
+    margin-left:150px;
+    height: 140px;
+    width: 80px;
+    background-color: rgb(226, 43, 43);
+    justify-content: bottom;
+    border-radius: 0 0 15px 15px;
+    --bg: #e74c3c;
+  --text-color: #fff;
+  /* position: relative;
+  width: 150px; */
+  border: none;
+  background: var(--bg);
+  color: var(--text-color);
+  padding: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  /* border-radius: 5px; */
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
+    
+}
+#off:hover {
+  opacity: 1;
+}
+#off:active {
+  top: 4px;
+  box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px;
+}
+.green_lineOne{
+    position: absolute;
+    bottom: 0;
+    height:38px;
+    width: 0;
+    border: 2px solid green;
+    margin:0 0 81px 189px;
+}
+.green_lineTwo{
+    position: absolute;
+    border: 2px solid green;
+    height: 0;
+    width: 655px;
+    bottom: 0;
+    margin:0 0 79px 190px;
+}
+.green_lineThree{
+    position: absolute;
+    bottom: 0;
+    height:350px;
+    width: 0;
+    border: 2px solid green;
+    margin:0 0 81px 845px;
+}
+.green_lineFour{
+    position: absolute;
+    border: 2px solid green;
+    height: 0;
+    width: 84px;
+    right: 0;
+    margin:63px 106px 0 0;
+}
+.green_lineFive{
+    position: absolute;
+    right: 0;
+    height:77px;
+    width: 0;
+    border: 2px solid green;
+    margin:64px 191px 0 0;
+    z-index: -1;
+}
+.off_font{
+    padding-top:48px;
+    font-size: small;
+}
+.cell{
+    height: 176px;
+    width: 50px;
+    background-color: rgb(135, 153, 202);
+    position: absolute;
+    margin:149px 0 0 433px;
+    border-radius: 15px;
+    
+}
+.red_lineOne{
+    position: absolute;
+    top: 0;
+    height:127px;
+    width: 0;
+    border: 2px solid red;
+    margin:63px 0 0 456px;
+}
+.red_lineTwo{
+    position: absolute;
+    border: 2px solid red;
+    height: 0;
+    width: 286px;
+    right: 0;
+    margin:63px 206px 0 0;
+}
+.red_lineThree{
+    position: absolute;
+    right: 0;
+    height:100px;
+    width: 0;
+    border: 2px solid red;
+    margin:63px 204px 0 0;
+    z-index: -1;
+}
+.positive_text{
+    padding-top:10px;
+}
+.negative_text{
+    padding-bottom:10px;
+}
+#bulb{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.64);
+    position: absolute;
+    right: 0;
+    padding: 45px 5px 0 0;
+    margin:157px 147px 0 0;
+    box-shadow: black 0px 10px 40px;
+}
+.upperBulb{
+    position: absolute;
+    right: 0;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    margin:141px 186px 0 0;
+    z-index: -1;
+    border-radius: 40% 40% 0 0 ;
+}
